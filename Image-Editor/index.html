@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+
+<html>
+    <script src="js/main.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/image-upload.js" type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" href="css/main.css" type="text/css" media="all" />
+    <link href='https://fonts.googleapis.com/css?family=Aguafina Script' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Akronim' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Alex Brush' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Amatic SC' rel='stylesheet'>
+    <link rel="manifest" href="./manifest.webmanifest" crossorigin="use-credentials" />
+<body>
+    <div>
+        <h1 id="text">Example Text</h1>
+        <h4 id="subText">Example Text</h4>
+        <img src="img/img1.png" id="image" />
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="inputs">
+        <input type="text" id="textVal" value="Example Text" oninput="change()" placeholder="Heading" />
+        <input type="number" id="left" oninput="change()" placeholder="left" />
+        <input type="number" id="top" oninput="change()" placeholder="top" />
+        <input type="number" id="textWeight" value="1" min="1" oninput="change()" placeholder="Weight" />
+        <input type="number" id="textSize" value="1" min="1" oninput="change()" placeholder="Size"/>
+        <select id="textFont" onchange="change()">
+            <option style="font-family: Georgia;">Georgia</option>
+            <option style="font-family: Palatino Linotype;">Palatino Linotype</option>
+            <option style="font-family: Book Antiqua;">Book Antiqua</option>
+            <option style="font-family: Times New Roman;">Times New Roman</option>
+            <option style="font-family: Arial;">Arial</option>
+            <option style="font-family: Helvetica;">Helvetica</option>
+            <option style="font-family: Arial Black;">Arial Black</option>
+            <option style="font-family: Impact;">Impact</option>
+            <option style="font-family: Lucida Sans Unicode;">Lucida Sans Unicode</option>
+            <option style="font-family: Tahoma;">Tahoma</option>
+            <option style="font-family: Verdana;">Verdana</option>
+            <option style="font-family: Courier New;">Courier New</option>
+            <option style="font-family: Lucida Console;">Lucida Console</option>
+            <option style="font-family: Aguafina Script;">Aguafina Script</option>
+            <option style="font-family: Sofia;">Sofia</option>
+            <option style="font-family: Akronim;">Akronim</option>
+            <option style="font-family: Aldrich;">Aldrich</option>
+            <option style="font-family: Alex Brush;">Alex Brush</option>
+            <option style="font-family: Amatic SC;">Amatic SC</option>
+          <option selected value="select font...">select font...</option>
+        </select>
+        <select id="textColor" onchange="change()">
+            <option value="red">red</option>
+            <option value="green">green</option>
+            <option value="lime">lime</option>
+            <option value="orange">orange</option>
+            <option value="yellow">yellow</option>
+            <option value="gray">gray</option>
+            <option value="black">black</option>
+            <option value="white">white</option>
+            <option value="purple">purple</option>
+            <option value="pink">pink</option>
+            <option value="magenta">magenta</option>
+            <option value="aqua">aqua</option>
+            <option value="darkblue">darkblue</option>
+            <option value="blue">blue</option>
+            <option value="lightblue">lightblue</option>
+            <option selected value="black">black</option>
+        </select>
+        <select id="extraTextColor" onchange="change()">
+            <option value="red">red</option>
+            <option value="green">green</option>
+            <option value="lime">lime</option>
+            <option value="orange">orange</option>
+            <option value="yellow">yellow</option>
+            <option value="gray">gray</option>
+            <option value="black">black</option>
+            <option value="white">white</option>
+            <option value="purple">purple</option>
+            <option value="pink">pink</option>
+            <option value="magenta">magenta</option>
+            <option value="aqua">aqua</option>
+            <option value="darkblue">darkblue</option>
+            <option value="blue">blue</option>
+            <option value="lightblue">lightblue</option>
+            <option selected value="black">black</option>
+        </select>
+    </div>
+    <br>
+    <br>
+    <div class="inputs">
+        <input type="text" id="textVal2" value="Example Text" oninput="change2()" placeholder="Heading" />
+        <input type="number" id="left2" oninput="change2()" placeholder="left" />
+        <input type="number" id="top2" oninput="change2()" placeholder="top" />
+        <input type="number" id="textWeight2" value="1" min="1" oninput="change2()" placeholder="Weight" />
+        <input type="number" id="textSize2" value="1" min="1" oninput="change2()" placeholder="Size"/>
+        <select id="textFont2" onchange="change2()">
+          <option style="font-family: Georgia;">Georgia</option>
+          <option style="font-family: Palatino Linotype;">Palatino Linotype</option>
+          <option style="font-family: Book Antiqua;">Book Antiqua</option>
+          <option style="font-family: Times New Roman;">Times New Roman</option>
+          <option style="font-family: Arial;">Arial</option>
+          <option style="font-family: Helvetica;">Helvetica</option>
+          <option style="font-family: Arial Black;">Arial Black</option>
+          <option style="font-family: Impact;">Impact</option>
+          <option style="font-family: Lucida Sans Unicode;">Lucida Sans Unicode</option>
+          <option style="font-family: Tahoma;">Tahoma</option>
+          <option style="font-family: Verdana;">Verdana</option>
+          <option style="font-family: Courier New;">Courier New</option>
+          <option style="font-family: Lucida Console;">Lucida Console</option>
+          <option style="font-family: Aguafina Script;">Aguafina Script</option>
+          <option style="font-family: Sofia;">Sofia</option>
+          <option style="font-family: Akronim;">Akronim</option>
+          <option style="font-family: Aldrich;">Aldrich</option>
+          <option style="font-family: Alex Brush;">Alex Brush</option>
+          <option style="font-family: Amatic SC;">Amatic SC</option>
+          <option selected value="select font...">select font...</option>
+        </select>
+        <select id="textColor2" onchange="change2()">
+            <option value="red">red</option>
+            <option value="green">green</option>
+            <option value="lime">lime</option>
+            <option value="orange">orange</option>
+            <option value="yellow">yellow</option>
+            <option value="gray">gray</option>
+            <option value="black">black</option>
+            <option value="white">white</option>
+            <option value="purple">purple</option>
+            <option value="pink">pink</option>
+            <option value="magenta">magenta</option>
+            <option value="aqua">aqua</option>
+            <option value="darkblue">darkblue</option>
+            <option value="blue">blue</option>
+            <option value="lightblue">lightblue</option>
+            <option selected value="black">black</option>
+        </select>
+        <select id="extraTextColor2" onchange="change2()">
+            <option value="red">red</option>
+            <option value="green">green</option>
+            <option value="lime">lime</option>
+            <option value="orange">orange</option>
+            <option value="yellow">yellow</option>
+            <option value="gray">gray</option>
+            <option value="black">black</option>
+            <option value="white">white</option>
+            <option value="purple">purple</option>
+            <option value="pink">pink</option>
+            <option value="magenta">magenta</option>
+            <option value="aqua">aqua</option>
+            <option value="darkblue">darkblue</option>
+            <option value="blue">blue</option>
+            <option value="lightblue">lightblue</option>
+            <option selected value="black">black</option>
+        </select>
+    </div>
+    <br>
+    <br>
+    <div id="imageFilters" class="inputs">
+        <input type="text" id="rotation" oninput="changeFilter()" min="0" max="4" placeholder="rotation (x90)">
+        <input type="text" id="grayscale" oninput="changeFilter()" min="0" max="100" placeholder="grayscale">
+        <input type="text" id="saturate" oninput="changeFilter()" min="0" max="100" placeholder="saturate">
+        <input type="text" id="invert" oninput="changeFilter()" min="0" max="100" placeholder="invert">
+        <input type="text" id="contrast" oninput="changeFilter()" min="0" max="100" placeholder="contrast">
+        <input type="text" id="brightness" oninput="changeFilter()" min="0" max="100" placeholder="brightness">
+        <input type="text" id="blur" oninput="changeFilter()" min="0" placeholder="blur">
+    </div>
+    <div id="upload" class="inputs">
+        <input type="file" id="fileUpload" accept="image/png, image/jpg" onchange="loadFile(event)">
+    </div>
+</body>
+</html>
